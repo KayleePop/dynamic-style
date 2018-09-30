@@ -7,6 +7,8 @@
 
 Extremely simple dynamic style loader with promise API
 
+Companion to [dynamic-script](https://github.com/kayleepop/dynamic-script)
+
 ## Goals
 - Simple and readable source code
 - Small API
