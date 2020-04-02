@@ -1,0 +1,29 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up node using nvm
+      uses: dcodeIO/setup-node-nvm@v3.0.0
+      with:
+        node-version: lts
+    - run: sudo apt-get install xvfb
+    - run: npm install
+    - run: xvfb-run --auto-servernum npm test
+      env:
+        CI: true
+    - name: Cleanup xvfb pidx
+      uses: bcomnes/cleanup-xvfb@v1
