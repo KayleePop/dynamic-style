@@ -1,6 +1,7 @@
 # dynamic-style
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/KayleePop/dynamic-style.svg)](https://greenkeeper.io/)
+[![Node.js CI](https://github.com/KayleePop/dynamic-style/workflows/Node.js%20CI/badge.svg)](https://github.com/KayleePop/dynamic-style/actions)
 [![standard badge](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![npm](https://img.shields.io/npm/v/dynamic-style.svg)](https://www.npmjs.com/package/dynamic-style)
 
