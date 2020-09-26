@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/kayleepop/dynamic-style#readme",
   "devDependencies": {
-    "browserify": "16.5.0",
+    "browserify": "16.5.2",
     "muggle-assert": "^1.1.0",
     "muggle-test": "^2.0.0",
     "standard": "^14.0.0",
